@@ -1,0 +1,29 @@
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+nav {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #020325;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #020a37;
+  color: #fff;
+  border-radius: 5px;
+}
