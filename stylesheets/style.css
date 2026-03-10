@@ -1,64 +1,29 @@
 .logo {
-  width: 100px;
+  width: 60px;
   height: auto;
-  margin-left: 10px;
+  border-radius: 50%;
 }
-
-body {
-  background-color: #f7f3ee;
-  color: #141414;
-  font-size: 20px;
-  margin: auto;
-}
-
-header {
-  color: #141414;
-  padding: 20px;
-  text-align: left;
-}
-
-header h1 {
-  font-size: 2em;
-  margin-bottom: 5px;
-}
-
 nav {
-  background-color: #8B0000;
-  padding: 10px 20px;
-  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  gap: 200px;
 }
 
 nav a {
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: #020325;
   padding: 5px 10px;
 }
 
 nav a:hover {
-  background-color: #8B0000;
-  color: #ffff;
+  background-color: #020a37;
+  color: #fff;
   border-radius: 5px;
-}
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 40px;
-}
-
-.hero-text {
-  width: 55%;
-}
-
-.hero-image {
-  width: 40%;
-  border-radius: 10px;
 }
