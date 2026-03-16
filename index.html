@@ -11,14 +11,18 @@ Date Last Modified: March 4, 2026
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 1 – The Stone Fort Treaty</title>
+    <!-- This link references the external stylesheet for styling the page And is located in the 'stylesheets' folder with the filename 'style.css'. 
+     it makes the page visually appealing and ensures a consistent layout across different sections.
+     -->
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
     <header>
       <nav>
+        <!-- In the class 'logo' it allows the image be a logo and adjusts its size and position accordingly -->
         <img
           src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-768x639.png"
-          alt="Treaty 1 Logo"
+          alt="Treaty One Development Corporation logo with two people shaking hands inside a red circle"
           class="logo"
         />
         <ul>
@@ -32,19 +36,22 @@ Date Last Modified: March 4, 2026
     </header>
 
     <main>
+      <!-- This section provides an overview of Treaty 1 and its significance and the class 'hero' is used for styling and layout -->
       <section class="hero">
         <img
           id="left-image"
           src="https://s3.amazonaws.com/thumbnails.illustrationsource.com/huge.14.74919.JPG"
-          alt="a treaty picture"
+          alt="Illustrated scroll labeled 'Treaty' with handwritten text and a quill pen resting across the parchment"
           class="hero-image"
         />
-
-        <div class="hero-text">
-          <h2>What is a Treaty?</h2>
-          <p>
-            A treaty is a formal agreement between two or more parties. In
-            Canada, treaties are formal agreements between Indigenous peoples
+      <!-- The class 'hero-image' is used to style the image, ensuring it fits well within the layout and maintains a consistent appearance
+       across different sections of the page. -->
+       <!-- The class 'hero-text' is used to style the text content, providing a clear and visually appealing presentation of the information about treaties and Treaty 1. -->
+      <div class="hero-text">
+        <h2>What is a Treaty?</h2>
+        <p>
+          A treaty is a formal agreement between two or more parties. In
+          Canada, treaties are formal agreements between Indigenous peoples
             and the Crown that define rights, obligations, and relationships
             regarding land, resources, and governance.
           </p>
@@ -58,13 +65,14 @@ Date Last Modified: March 4, 2026
       </section>
 
       <hr />
-
+      <!-- This section provides an overview of Treaty 1 and its significance and the class 'hero' is used for styling and layout . it uses  style
+       flex-direction: row-reverse to change the layout direction -->
       <section class="hero" style="flex-direction: row-reverse">
         <img
           id="right-image"
           src="https://blackcatredriver.ca/wp-content/uploads/2021/08/Treaty-1-940x510.jpeg"
           style="height: 12cm; width: 13cm"
-          alt="where treaty 1 was signed"
+          alt="Historical drawing of Indigenous leaders and Crown representatives meeting during a treaty discussion"
           class="hero-image"
         />
         <div class="hero-text">
@@ -85,13 +93,9 @@ Date Last Modified: March 4, 2026
 
       <hr />
       <section class="hero" style="flex-direction: row">
-        <a
-          href="https://canadiangeographic.ca/wp-content/uploads/2022/02/treaties1_2_20_online_01.jpg"
-          target="_blank"
-        >
           <img
             src="https://canadiangeographic.ca/wp-content/uploads/2022/02/treaties1_2_20_online_01.jpg"
-            alt="Map of Treaty 1"
+            alt="Map showing the location of Treaty 1 and Treaty 2 territories in Manitoba"
             class="hero-image"
             style="height: 9cm; width: 13cm; cursor: pointer"
           />
