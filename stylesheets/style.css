@@ -78,9 +78,15 @@
   hr {
     margin: 30px 0;
   }
+  
+  .highlight {
+  color: #a80000;
+  font-weight: bold;
+}
   footer{
     text-align: center;
     margin-top: 40px;
     padding: 20px;
     color: #8b0000;
 }
+
