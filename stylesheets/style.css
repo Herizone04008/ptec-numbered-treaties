@@ -1,129 +1,164 @@
+/* 
+  BODY STYLING
+  - Sets the overall look and readability of the entire website.
+*/
 body {
-  background-color: #f7f3ee;
-  color: #141414;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.8;
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+  background-color: #f7f3ee; /* Light neutral background to improve readability */
+  color: #141414; /* Dark charcoal text for strong contrast */
+  font-family: "Open Sans", sans-serif; /* Clean, modern, easy-to-read body font */
+  font-size: 1.1rem; /* Base text size for paragraphs and body content */
+  line-height: 1.7; /* Adds vertical spacing between lines for readability */
+  max-width: 1000px; /* Limits line width so text is easier to read */
+  margin: auto; /* Centers the entire page content */
+  padding: 20px; /* Adds space around the edges of the page */
 }
 
-p {
-  margin-bottom: 18px;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.highlight-term {
-  color: #8b0000;
-  font-weight: bold;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Merriweather", serif;
-  color: #8b0000;
-  line-height: 1.3;
-}
-
-h1 {
-  font-size: 2.4rem;
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 35px;
-  margin-bottom: 12px;
-}
-
+/* 
+  NAVIGATION BAR
+  - Styles the top navigation area and positions items.
+*/
 nav {
-  background-color: #8b0000;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  background-color: #8b0000; /* Deep red primary colour for strong visual identity */
+  padding: 10px 20px; /* Adds space inside the nav bar */
+  display: flex; /* Places items side-by-side horizontally */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Pushes logo left and links right */
 }
 
+/* 
+  LOGO IMAGE
+  - Controls the size of the logo in the navigation bar.
+*/
 .logo {
-  width: 70px;
-  height: auto;
+  width: 70px; /* Sets consistent logo width */
+  height: auto; /* Keeps the image from stretching */
 }
 
+/* 
+  NAVIGATION LIST
+  - Removes bullets and spaces out the links.
+*/
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  align-items: center;
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Places links in a row */
+  gap: 40px; /* Adds space between each link */
+  align-items: center; /* Keeps links aligned vertically */
 }
 
+/* 
+  NAVIGATION LINKS
+  - Styles the clickable links in the navigation bar.
+*/
 nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  padding: 5px 10px;
-  transition: 0.3s ease;
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Makes links stand out */
+  color: white; /* White text for contrast on red background */
+  padding: 5px 10px; /* Adds clickable space around links */
 }
 
+/* 
+  NAVIGATION HOVER EFFECT
+  - Changes colour when the user hovers over a link.
+*/
 nav a:hover {
-  background-color: #d4a017;
-  color: #141414;
-  border-radius: 5px;
+  background-color: #d4a017; /* Gold accent colour for hover */
+  color: #141414; /* Dark text for contrast on gold */
+  border-radius: 5px; /* Softens the hover background shape */
 }
 
+/* 
+  HERO SECTION LAYOUT
+  - Controls the layout of image + text sections.
+*/
 .hero {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 50px;
-  padding: 40px 0;
+  display: flex; /* Places image and text side-by-side */
+  align-items: flex-start; /* Aligns items at the top */
+  justify-content: space-between; /* Spreads image and text apart */
+  gap: 40px; /* Adds space between image and text */
+  padding: 40px 0; /* Adds vertical spacing above and below */
 }
 
+/* 
+  HERO TEXT
+  - Controls the width of the text block in hero sections.
+*/
 .hero-text {
-  width: 60%;
-  padding: 20px;
+  width: 60%; /* Text takes up 60% of the hero section */
 }
 
+/* 
+  HERO IMAGE
+  - Controls the size and shape of images in hero sections.
+*/
 .hero-image {
-  width: 50%;
-  border-radius: 18px;
-  box-shadow: 0px 4px 10px #141414;
-  transition: 0.3s ease;
+  width: 50%; /* Image takes up half the hero section */
+  border-radius: 18px; /* Rounds the corners for a modern look */
 }
 
-.hero-image:hover {
-  transform: scale(1.02);
-}
-
-#right-image {
-  float: right;
-  margin-left: 20px;
-}
-
+/* 
+  SECTION STYLING
+  - Creates clean, card-like content blocks.
+*/
 section {
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 45px;
-  box-shadow: 0px 4px 10px #141414;
+  background-color: #ffffff; /* White background for contrast */
+  padding: 20px; /* Adds space inside the section */
+  border-radius: 12px; /* Soft rounded corners */
+  margin-bottom: 40px; /* Adds space between sections */
+  box-shadow: 0px 2px 6px #00000014; /* Soft shadow for depth */
 }
 
+/* 
+  RIGHT-ALIGNED IMAGE
+  - Moves the image to the right side of the text.
+*/
+#right-image {
+  float: right; /* Pushes the image to the right */
+  margin-left: 20px; /* Adds space between image and text */
+}
+
+/* 
+  MAIN PAGE TITLE
+  - Styles the h1 heading.
+*/
+h1 {
+  font-size: 2em; /* Larger size for main title */
+  color: #8b0000; /* Primary colour for emphasis */
+  align-items: center; /* Centers the heading content */
+}
+
+/* 
+  SECTION HEADINGS
+  - Styles h2 headings.
+*/
+h2 {
+  margin-top: 30px; /* Adds space above each heading */
+  color: #8b0000; /* Uses primary colour for consistency */
+}
+
+/* 
+  HORIZONTAL LINE
+  - Adds spacing around <hr> dividers.
+*/
 hr {
-  margin: 30px 0;
-  border: none;
-  border-top: 2px solid #d4a017;
+  margin: 30px 0; /* Adds space above and below the line */
 }
 
+/* 
+  HIGHLIGHTED TEXT
+  - Styles <span> elements used for emphasis.
+*/
+span {
+  color: #8b0000; /* Highlights important words in red */
+  font-weight: bold; /* Makes highlighted text stand out */
+}
+
+/* 
+  FOOTER STYLING
+  - Styles the bottom section of the page.
+*/
 footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  color: #8b0000;
-  font-weight: bold;
+  text-align: center; /* Centers footer text */
+  margin-top: 40px; /* Adds space above the footer */
+  padding: 20px; /* Adds space inside the footer */
+  color: #8b0000; /* Uses primary colour for consistency */
 }
