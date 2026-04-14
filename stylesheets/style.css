@@ -105,6 +105,7 @@ section {
   border-radius: 12px; /* Soft rounded corners */
   margin-bottom: 40px; /* Adds space between sections */
   box-shadow: 0px 2px 6px #00000014; /* Soft shadow for depth */
+  box-sizing: border-box;
 }
 
 /* 
@@ -141,6 +142,8 @@ h2 {
 */
 hr {
   margin: 30px 0; /* Adds space above and below the line */
+  background-color: #d4a017; /* Gold accent colour for visual interest */ 
+  height: 1px; /* Makes the line thicker for emphasis */
 }
 
 /* 
