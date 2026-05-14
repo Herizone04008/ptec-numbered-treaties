@@ -1,167 +1,233 @@
 /* 
-  BODY STYLING
-  - Sets the overall look and readability of the entire website.
+  Name: Heritage Akinjayeju
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: Pembina Trails Collegiate
+  Date Last Modified: May 13, 2026
 */
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
 body {
-  background-color: #f7f3ee; /* Light neutral background to improve readability */
-  color: #141414; /* Dark charcoal text for strong contrast */
-  font-family: "Open Sans", sans-serif; /* Clean, modern, easy-to-read body font */
-  font-size: 1.1rem; /* Base text size for paragraphs and body content */
-  line-height: 1.7; /* Adds vertical spacing between lines for readability */
-  max-width: 1000px; /* Limits line width so text is easier to read */
-  margin: auto; /* Centers the entire page content */
-  padding: 20px; /* Adds space around the edges of the page */
+  background-color: #f7f3ee;
+  color: #141414;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  word-spacing: 0.12em;
+  letter-spacing: 0.02em;
 }
 
-/* 
-  NAVIGATION BAR
-  - Styles the top navigation area and positions items.
-*/
+/* NAVIGATION */
 nav {
-  background-color: #8b0000; /* Deep red primary colour for strong visual identity */
-  padding: 10px 20px; /* Adds space inside the nav bar */
-  display: flex; /* Places items side-by-side horizontally */
-  align-items: center; /* Vertically centers items */
-  justify-content: space-between; /* Pushes logo left and links right */
+  background-color: #8b0000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* 
-  LOGO IMAGE
-  - Controls the size of the logo in the navigation bar.
-*/
 .logo {
-  width: 70px; /* Sets consistent logo width */
-  height: auto; /* Keeps the image from stretching */
+  width: 70px;
+  height: auto;
 }
 
-/* 
-  NAVIGATION LIST
-  - Removes bullets and spaces out the links.
-*/
 nav ul {
-  list-style: none; /* Removes bullet points */
-  display: flex; /* Places links in a row */
-  gap: 40px; /* Adds space between each link */
-  align-items: center; /* Keeps links aligned vertically */
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
-/* 
-  NAVIGATION LINKS
-  - Styles the clickable links in the navigation bar.
-*/
+/* LINK STATES + TRANSITIONS */
 nav a {
-  text-decoration: none; /* Removes underline */
-  font-weight: bold; /* Makes links stand out */
-  color: white; /* White text for contrast on red background */
-  padding: 5px 10px; /* Adds clickable space around links */
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+  -moz-transition: background-color 0.2s ease, color 0.2s ease;
+  -o-transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* 
-  NAVIGATION HOVER EFFECT
-  - Changes colour when the user hovers over a link.
-*/
-nav a:hover {
-  background-color: #d4a017; /* Gold accent colour for hover */
-  color: #141414; /* Dark text for contrast on gold */
-  border-radius: 5px; /* Softens the hover background shape */
+nav a:link,
+nav a:visited {
+  color: white;
 }
 
-/* 
-  HERO SECTION LAYOUT
-  - Controls the layout of image + text sections.
-*/
+nav a:hover,
+nav a:focus {
+  background-color: #d4a017;
+  color: #141414;
+  border-radius: 5px;
+}
+
+nav a:active {
+  background-color: #b8860b;
+  color: #141414;
+}
+
+/* HERO SECTION */
 .hero {
-  display: flex; /* Places image and text side-by-side */
-  align-items: flex-start; /* Aligns items at the top */
-  justify-content: space-between; /* Spreads image and text apart */
-  gap: 40px; /* Adds space between image and text */
-  padding: 40px 0; /* Adds vertical spacing above and below */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 0;
 }
 
-/* 
-  HERO TEXT
-  - Controls the width of the text block in hero sections.
-*/
-.hero-text {
-  width: 60%; /* Text takes up 60% of the hero section */
-}
-
-/* 
-  HERO IMAGE
-  - Controls the size and shape of images in hero sections.
-*/
+/* HERO IMAGE — TRANSFORM + PREFIXES + POSITION + Z-INDEX */
 .hero-image {
-  width: 50%; /* Image takes up half the hero section */
-  border-radius: 18px; /* Rounds the corners for a modern look */
+  width: 50%;
+  border-radius: 18px;
+
+  position: relative;
+  z-index: 1;
+
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  -o-transition: -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-/* 
-  SECTION STYLING
-  - Creates clean, card-like content blocks.
-*/
+.hero-image:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* HERO TEXT */
+.hero-text {
+  width: 60%;
+  word-spacing: 0.12em;
+}
+
+/* HEADINGS — HIERARCHY + ANIMATION */
+h1 {
+  font-size: 2em;
+  color: #8b0000;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+
+  -webkit-animation: fadeInUp 0.6s ease-out;
+  -moz-animation: fadeInUp 0.6s ease-out;
+  -o-animation: fadeInUp 0.6s ease-out;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #8b0000;
+}
+
+/* SECTIONS */
 section {
-  background-color: #ffffff; /* White background for contrast */
-  padding: 20px; /* Adds space inside the section */
-  border-radius: 12px; /* Soft rounded corners */
-  margin-bottom: 40px; /* Adds space between sections */
-  box-shadow: 0px 2px 6px #00000014; /* Soft shadow for depth */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0px 2px 6px #00000014;
   box-sizing: border-box;
 }
 
-/* 
-  RIGHT-ALIGNED IMAGE
-  - Moves the image to the right side of the text.
-*/
-#right-image {
-  float: right; /* Pushes the image to the right */
-  margin-left: 20px; /* Adds space between image and text */
+/* TERMS PAGE TYPOGRAPHY NULL SPACE */
+.terms-section p:first-of-type {
+  text-indent: 1.2em;
 }
 
-/* 
-  MAIN PAGE TITLE
-  - Styles the h1 heading.
-*/
-h1 {
-  font-size: 2em; /* Larger size for main title */
-  color: #8b0000; /* Primary colour for emphasis */
-  align-items: center; /* Centers the heading content */
+.terms-section p {
+  letter-spacing: 0.02em;
+  word-spacing: 0.12em;
 }
 
-/* 
-  SECTION HEADINGS
-  - Styles h2 headings.
-*/
-h2 {
-  margin-top: 30px; /* Adds space above each heading */
-  color: #8b0000; /* Uses primary colour for consistency */
+/* HIGHLIGHTED TERMS */
+.highlight-term {
+  color: #8b0000;
+  font-weight: bold;
 }
 
-/* 
-  HORIZONTAL LINE
-  - Adds spacing around <hr> dividers.
-*/
-hr {
-  margin: 30px 0; /* Adds space above and below the line */
-  background-color: #d4a017; /* Gold accent colour for visual interest */ 
-  height: 1px; /* Makes the line thicker for emphasis */
-}
-
-/* 
-  HIGHLIGHTED TEXT
-  - Styles <span> elements used for emphasis.
-*/
+/* GENERIC SPAN */
 span {
-  color: #8b0000; /* Highlights important words in red */
-  font-weight: bold; /* Makes highlighted text stand out */
+  color: #8b0000;
+  font-weight: bold;
 }
 
-/* 
-  FOOTER STYLING
-  - Styles the bottom section of the page.
-*/
+/* HR */
+hr {
+  margin: 30px 0;
+  background-color: #d4a017;
+  height: 1px;
+  border: none;
+}
+
+/* FOOTER */
 footer {
-  text-align: center; /* Centers footer text */
-  margin-top: 40px; /* Adds space above the footer */
-  padding: 20px; /* Adds space inside the footer */
-  color: #8b0000; /* Uses primary colour for consistency */
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #8b0000;
+}
+
+/* RESEARCHED ANIMATION */
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -moz-transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -o-transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
